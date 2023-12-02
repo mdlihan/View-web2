@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* navbar-start */
+.navbar{
+    text-align: center;
+    background-color: rgb(0, 174, 255);
+    margin-top: 10px;
+  }
+  .nav-logo img{
+   height: 90px;
+   width: 90px;
+   margin-top: 10px;
+   border-radius: 50%;
+  }
+  h1{
+      color: rgb(0, 255, 255);
+      font-size: 40px;
+      text-align: center;
+      margin-top: 40px;
+  }
+  .nav-manu{
+      padding: 15px;
+      font-size: 18px;
+  }
+  .nav-manu a{
+      text-decoration: none;
+      padding: 10px;
+      color: white;
+      display: block;
+      background-color: rgb(0, 102, 255);
+      margin: 8px 10px;
+      border-radius: 25px;
+  }
+  .nav-manu a:hover{
+      background-color:gray;
+      color: bisque;
+  }
+  [class*="col-"]{
+      float: left;
+  }
+  [class*="col-"]{
+      width: 100%;
+  }
+  .navbar::after{
+      content: " ";
+      clear: both;
+      display: table;
+  }
+   
+/* navbar-end   */
+/* profile-start */
+ .profile{
+    text-align: center;
+    position: relative;
+    padding: 110px 8px;
+ }
+ .profile-header h2{
+    font-family:Cursive;
+    text-align: center;
+    font-size: 40px;
+}
+ .profile-header{
+    margin-top: 30px;
+ }
+.top-img{
+        position: absolute;
+        right: 25px;
+        top: 23px;
+        transition: 2s;
+        
+ }
+ .top-img:hover{
+    transform: rotate(360deg);
+ }
+ .bottom-img{
+    position: absolute;
+    left: 20px;
+    transition: 2s; 
+}
+.bottom-img:hover{
+    transform: rotate(360deg);
+}
+.profile::after{
+    content: " ";
+    clear: both;
+    display: table;
+}
+/* profile-start */
+
+/* about me start */
+.about-me{
+    color: white;
+    background-color: rgb(59, 148, 250);
+}
+.about-me h2{
+  text-align: center;
+  font-size: 38px;
+}
+.dotted-hr{
+   width: 160px;
+   border: dotted 6px;
+   border-bottom: none;
+   margin-top: -25px;
+}
+.about-img{
+    text-align: center;
+}
+.about-img img{
+    border-radius: 50%;
+    height: 350px;
+    width: 300px;
+    border: 3px solid black;
+    margin: 60px 0px;
+ 
+
+}
+.about-me h2{
+    background-color: black;
+}
+.about-me2 p{
+    font-size: 18px;
+}
+
+.about-me::after{
+    content: " ";
+    clear: both;
+    display: table;
+}
+/* about me end */
+
+/* card start */
+.profational-experience{
+    margin-top: 20px;
+    padding: 5px;
+    background-color: rgb(248, 199, 138);
+}
+.profational-experience .card{
+    margin: 5px;
+}
+      .card{
+        background-color: gray;
+        border-radius: 10px;
+        height: 650px;
+      }
+
+      .card:hover{
+        box-shadow: 6px 4px 6px;
+
+      }
+      .icon{
+        text-align: center;
+      }
+      .icon img{
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            margin-top: 30px;
+            border: 3px solid black;
+      }
+      .profational-experience h1{
+        font-size: 32px;
+        background-color: rgb(59, 57, 57);
+        padding: 4px;
+
+      }
+      .profational-experience::after{
+        content: " ";
+        clear: both;
+        display: table;
+    }
+.contanar li{
+       list-style: none;
+       margin: 30px 10px;
+       font-weight: bold;
+       font-size: 20px;
+       position: relative;
+    }
+    .contanar li::before{
+        position: absolute;
+        content: " ";
+        background-color: rgb(128, 247, 247);
+        height: 9px;
+        width: 100%;
+        border-radius: 15px;
+        top: calc(100% + 5px);
+        left: 0px;
+    }
+
+    .contanar li::after{
+        position: absolute;
+        content: " ";
+        background-color: rgb(18, 77, 240);
+        height: 9px;
+        border-radius: 15px;
+        top: calc(100% + 5px);
+        left: 0px;
+        width: 0px;
+        animation-fill-mode: forwards;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    
+  .contanar li.html::after{
+    animation-name: html;
+}
+
+
+@keyframes html{
+    to{
+        width: 90%;
+        background-color: rgb(252, 61, 220);
+    }
+}
+
+.contanar li.css::after{
+    animation-name: css;
+}
+
+
+@keyframes css{
+    to{
+        width: 100%;
+        background-color: rgb(13, 253, 153);
+    }
+}
+
+.contanar li.js::after{
+    animation-name: js;
+}
+
+
+@keyframes js{
+    to{
+        width: 85%;
+        background-color: rgb(252, 61, 220);
+    }
+}
+
+.contanar li.c::after{
+    animation-name: c;
+}
+
+
+@keyframes c{
+    to{
+        width: 75%;
+        background-color: rgb(252, 61, 220);
+    }
+}
+
+.contanar li.python::after{
+    animation-name: python;
+}
+
+
+@keyframes python{
+    to{
+        width: 95%;
+        background-color: rgb(252, 61, 220);
+    }
+}
+
+
+
+.contanar li.jb::after{
+    animation-name: jb;
+}
+
+
+@keyframes jb{
+    to{
+        width: 65%;
+        background-color: rgb(252, 61, 220);
+    }
+}
+
+.profational-experience::after{
+    content: " ";
+    clear: both;
+    display: table;
+}
+/* card end */
+
+/* achievement-contact start */
+
+.achievement-contact{
+    background-color: aqua;
+    text-align: center;
+}
+.achievement-contact .dotted-hr{
+color: white;
+}
+.achievement-contact h2{
+    font-size: 30px;
+    color: white;
+    background-color: rgb(70, 69, 69);
+    margin: 15px 8px;
+}
+.contact-me input,textarea{
+    width: 100%;
+    border: none;
+    font-weight: bold;
+}
+.contact-me button{
+    border-radius: 5px;
+    height: 40px;
+    width: 70px;
+    background-color: gray;
+    color: white;
+    margin: 10px 10px;
+}
+
+.contact-me button:hover{
+     background-color: white;
+     color: black;
+}
+
+.contact-me input{
+text-align: center;
+height: 40px;
+width: 200px;
+font-size: 18px;
+}
+.contact-me textarea{
+  font-size: 18px;
+   resize: none;
+   width: 300px;
+   height: 200px;
+}
+
+.more-way{
+    text-align: center;
+}
+
+.midia-button .btn{
+    border: none;
+    font-size: 32px;
+    border-radius: 15px;
+    margin: 10px;
+    width: 50px;
+    background-color: white;
+}
+
+.midia-button .btn:hover{
+    background-color: gray;
+}
+.achievement-contact::after{
+    content: " ";
+    clear: both;
+    display: table;
+}
+/* achievement-contact end */
+ 
+/*footer start */
+    .footer{
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-size: 20px;
+   } 
+  
+.intro .unicord{
+    color: rgb(250, 59, 59);
+}
+.footer .left a{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    display: block;
+    margin: 0px 35px;
+} 
+
+.footer .left a:hover{
+    color: aqua;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    background-color: rgb(170, 168, 168);
+    border-radius: 15px;
+}
+
+.footer::after{
+    content: " ";
+    clear: both;
+    display: table;
+} 
+/* footer end */

@@ -1,0 +1,87 @@
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* navbar-start */
+.nav-manu a{
+    display: inline;
+    background-color: transparent;
+}
+.nav-manu{
+    margin-top: 35px;
+    text-align: end;
+}
+.nav-logo{
+    text-align:left;
+  
+   }
+
+ .nav-header{
+    text-align: right;
+ }  
+ .navbar{
+    padding: 10px;
+ }
+ /* navbar-end */
+
+ /* card :start */
+ .card{
+    background-color: gray;
+    border-radius: 10px;
+    width: 320px;
+    height: 650px;
+  }
+  
+.icon{
+    text-align: center;
+  }
+/* card end */
+
+ /* achievement-contact start */
+ .contact-me input,textarea{
+    width: 80%;
+    border: none;
+    font-weight: bold;
+}
+.more-way{
+    position: relative;
+}
+.midia-button{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 200px;
+}
+.footer .left a{
+   display: inline;
+   margin: 0px;
+}
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    height: 100px;
+ } 
+ .footer .left{
+   margin: 40px 0px;
+ }
+
+ .footer .intro{
+    margin: 36px 0px;
+ }
+/* achievement-contact end */
+
+/*footer start */
+
+/* footer end */
